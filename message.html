@@ -14,7 +14,7 @@ $postdata=json_encode($postdata);
 curl_setopt($ch, CURLOPT_POSTFIELDS, $postdata);
 $headers = array();
 $headers[] = 'Content-Type: application/json';
-$headers[] = 'Authorization: Bearer your_key_here';
+$headers[] = 'Authorization: Bearer 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';
 curl_setopt($ch, CURLOPT_HTTPHEADER, $headers);
 $result = curl_exec($ch);
 $result=json_decode ($result, true);
